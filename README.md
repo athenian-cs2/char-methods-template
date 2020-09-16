@@ -1,35 +1,28 @@
-# Calculator Bot Assignment
+# Char Methods Assignment
 
-In this assignment, you'll be writing three methods to carry out some math operations. Using the Java Math methods will be very helpful.
+In this assignment, you'll be writing four methods to carry out some char operations. 
 
-The first method is median(). This method takes three integers as input, and returns the 2nd largest integer of the three integers. The method has the following signature: public static int median(int a, int b, int c) {}
+The first method is toLower(). This method changes an uppercase char to a lowercase char. The method takes a char as input; if the char is not an uppercase letter, it returns the char unchaged. Otherwise, it returns the lowercase equivalent of the uppercase letter. The method has the following signature: public static char toLower(char ch) {}
 
-The second method is magnitude(). This method takes two integers as input, and returns the integer with the larger absolute value. The method has the following signature: public static int magnitude(int a, int b) {}
+The second method is toUpper(). This method changes an lowercase char to a uppercase char. The method takes a char as input; if the char is not an lowercase letter, it returns the char unchaged. Otherwise, it returns the uppercase equivalent of the lowercase letter. The method has the following signature: public static char toUpper(char ch) {}
 
-The final method is pythagoras(). This method takes two integers as input. These two integers represent the numbers "a" and "b" in the Pythagoras theorem. The method returns the calculated value for "c". Remember that the Pythagoras theorem is "a^2 + b^2 = c^2". The method has the following signature: public static double pythagoras(int a, int b) {}
+The third method is myToLowerCase(). This method is given a String as input and returns a copy of the String where all letters are now lowercase. Note: you're not allowed to just call the toLowerCase() method from Java. The method has the following signature: ppublic static String myToLowerCase(String str) {}
 
-After writing the three methods and testing that they work, use Scanner in your main code to allow the user to choose which method to run. For instance, your program should allow them to type in the name of which method they want to run, then it will ask them for the necessary inputs and carry out the desired method. 
+The final method is myToUpperCase(). This method is given a String as input and returns a copy of the String where all letters are now uppercase. Note: you're not allowed to just call the toUpperCase() method from Java. The method has the following signature: ppublic static String myToUpperCase(String str) {}
 
-Note: you should use the .equals() method to check if two Strings are equal. == does not work for Strings! For example:
-```shell script
-String x = "hello";
-String y = "hello";
-boolean z = x.equals(y); // z = true
-```
+Hint: for the third and forth methods, you can start with an empty String "" and add chars to that String one at a time.
 
-In addition, you may find the Scanner method scan.nextInt() helpful. Whereas scan.next() always returns a string, scan.nextInt() asks the user to type in an integer and returns an integer. This will probably save you some time with converting between types. 
+After writing the four methods and testing that they work, use Scanner in your main code to ask them for the String that they wanted to make lowercase/uppercase. Then, allow the user to choose which method to run. Finally, your code should output the resulting string. 
+
+Remember the Scanner nextLine() method is useful for getting a String that contains spaces. 
 
 Example of what your program may look like when it is being run:
 ```shell script
-What command would you like to carry out?
-median
-What is the first number?
-2
-What is the second number?
-3
-What is the third number?
-1
-The median is 2
+Please enter a String
+THE ATHENIAN SCHOOL IS GREAT
+What would you like to make your string lowercase or uppercase?
+lowercase
+Here is your string in lowercase: the athenian school is great
 ```
 
 <br />
