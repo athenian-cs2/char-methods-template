@@ -2,29 +2,39 @@ import java.util.Scanner;
 
 public class MyMain {
 
-    // Calculates the median of the three inputs
-    public static int median(int a, int b, int c) {
-        return 0; // REPLACE WITH YOUR CODE
+    // Changes a capital letter to a lowercase letter
+    // If the char is not an uppercase letter, 
+    // it is returned unchanged. 
+    public static char toLower(char ch) {
+        // REPLACE WITH YOUR CODE
+        return '!';
     }
 
-    // Returns the input with the larger absolute value
-    public static int magnitude(int a, int b) {
-        return 0; // REPLACE WITH YOUR CODE
+    // Returns a copy of a String, where all letters 
+    // are now lowercase
+    public static String myToLowerCase(String str) {
+        // REPLACE WITH YOUR CODE
+        return "";
     }
 
-    // Returns the "c" value from the Pythagorean theorem "a^2 + b^2 = c^2",
-    // where "a" and "b" are the inputs to the method
-    public static double pythagoras(int a, int b) {
-        return 0.0; // REPLACE WITH YOUR CODE
+    // Changes a lowercase letter to an uppercase letter
+    // If the char is not an lowercase letter, 
+    // it is returned unchanged. 
+    public static char toUpper(char ch) {
+        // REPLACE WITH YOUR CODE HERE
+        return '!';
     }
+
+    // Returns a copy of a String, where all letters 
+    // are now uppercase
+    public static String myToUpperCase(String str) {
+        // REPLACE WITH YOUR CODE HERE
+        return "";
+    }
+
 
     public static void main(String[] args) {
-        // You may want to keep these lines of code to test that your methods work
-        System.out.println(median(1, 2, 3)); // should be 2
-        System.out.println(magnitude(-7, -1)); // should be -7
-        System.out.println(pythagoras(3, 4)); // should be 5.0
-
-        Scanner scan = new Scanner(System.in);
         // YOUR CODE HERE
+        
     }
 }
