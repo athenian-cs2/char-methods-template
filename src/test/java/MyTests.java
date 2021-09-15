@@ -16,7 +16,6 @@ public class MyTests {
         assertEquals('z', MyMain.toLower('z'), "Calling toLower on the char \'z\' should output: z");
         assertEquals('*', MyMain.toLower('*'), "Calling toLower on the char \'*\' should output: *");
         assertEquals('1', MyMain.toLower('1'), "Calling toLower on the char \'1\' should output: 1");
-        assertEquals('\\', MyMain.toLower('\\'), "Calling toLower on the char \'\\\' should output: \\");
     }
 
     @Test
@@ -31,28 +30,13 @@ public class MyTests {
         assertEquals('Z', MyMain.toUpper('z'), "Calling toUpper on the char \'z\' should output: Z");
         assertEquals('*', MyMain.toUpper('*'), "Calling toUpper on the char \'*\' should output: *");
         assertEquals('1', MyMain.toUpper('1'), "Calling toUpper on the char \'1\' should output: 1");
-        assertEquals('\\', MyMain.toUpper('\\'), "Calling toUpper on the char \'\\\' should output: \\");
     }
 
     @Test
-    public void testMyToLowerCase() {
-        assertEquals("hello world", MyMain.myToLowerCase("HELLO WORLD"), "Calling myToLowerCase on the string \"HELLO WORLD\" should output: hello world");
-        assertEquals("hello world", MyMain.myToLowerCase("hELLo wORlD"), "Calling myToLowerCase on the string \"hELLo wORlD\" should output: hello world");
-        assertEquals("hello world!", MyMain.myToLowerCase("hello world!"), "Calling myToLowerCase on the string \"hello world!\" should output: hello world!");
-        assertEquals("abcdefghijklmnopqrstuvwxyz", MyMain.myToLowerCase("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "Calling myToLowerCase on the string ABCDEFGHIJKLMNOPQRSTUVWXYZ\" should output: abcdefghijklmnopqrstuvwxyz");
-        assertEquals("abcdefghijklmnopqrstuvwxyz", MyMain.myToLowerCase("abcdefghijklmnopqrstuvwxyz"), "Calling myToLowerCase on the string abcdefghijklmnopqrstuvwxyz\" should output: abcdefghijklmnopqrstuvwxyz");
-        assertEquals("1234567890", MyMain.myToLowerCase("1234567890"), "Calling myToLowerCase on the string \"1234567890\" should output: 1234567890");
-        assertEquals("1 plus 2 = five", MyMain.myToLowerCase("1 PLUS 2 = fivE"), "Calling myToLowerCase on the string \"1 PLUS 2 = fivE\" should output: 1 plus 2 = five");
-    }
-
-    @Test
-    public void testMyToUpperCase() {
-        assertEquals("HELLO WORLD", MyMain.myToUpperCase("HELLO WORLD"), "Calling myToUpperCase on the string \"HELLO WORLD\" should output: HELLO WORLD");
-        assertEquals("HELLO WORLD", MyMain.myToUpperCase("hELLo wORlD"), "Calling myToUpperCase on the string \"hELLo wORlD\" should output: HELLO WORLD");
-        assertEquals("HELLO WORLD!", MyMain.myToUpperCase("hello world!"), "Calling myToUpperCase on the string \"hello world!\" should output: HELLO WORLD!");
-        assertEquals("ABCDEFGHIJKLMNOPQRSTUVWXYZ", MyMain.myToUpperCase("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "Calling myToUpperCase on the string ABCDEFGHIJKLMNOPQRSTUVWXYZ\" should output: ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-        assertEquals("ABCDEFGHIJKLMNOPQRSTUVWXYZ", MyMain.myToUpperCase("abcdefghijklmnopqrstuvwxyz"), "Calling myToUpperCase on the string abcdefghijklmnopqrstuvwxyz\" should output: ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-        assertEquals("1234567890", MyMain.myToUpperCase("1234567890"), "Calling myToUpperCase on the string \"1234567890\" should output: 1234567890");
-        assertEquals("1 PLUS 2 = FIVE", MyMain.myToUpperCase("1 PLUS 2 = fivE"), "Calling myToUpperCase on the string \"1 PLUS 2 = fivE\" should output: 1 PLUS 2 = FIVE");
+    public void testRemoveNumbers() {
+        assertEquals("hello world!", MyMain.removeNumbers("h1e2l3l4o5 6w7o8r9l0d00!"), "Calling removeNumbers on the string \"h1e2l3l4o5 6w7o8r9l0d00!\" should output: hello world!");
+        assertEquals("the athenian school", MyMain.removeNumbers("151111the athenian school22224"), "Calling removeNumbers on the string \"151111the athenian school22224\" should output: the athenian school");
+        assertEquals("apple orange banana", MyMain.removeNumbers("1a2p3p4l5e 6o7r8a9n0g1e 2b3a4n555ana688"), "Calling removeNumbers on the string \"1a2p3p4l5e 6o7r8a9n0g1e 2b3a4n555ana688\" should output: apple orange banana");
+        assertEquals("cranberry dragonfruit fig", MyMain.removeNumbers("72cran23be2r1ry dr453agon12fr3uit 33fi2g72"), "Calling removeNumbers on the string \"72cran23be2r1ry dr453agon12fr3uit 33fi2g72\" should output: cranberry dragonfruit fig");
     }
 }

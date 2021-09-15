@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class MyMain {
 
     // Changes a capital letter to a lowercase letter
@@ -10,31 +8,24 @@ public class MyMain {
         return '!';
     }
 
-    // Returns a copy of a String, where all letters 
-    // are now lowercase
-    public static String myToLowerCase(String str) {
-        // REPLACE WITH YOUR CODE
-        return "";
-    }
-
     // Changes a lowercase letter to an uppercase letter
-    // If the char is not an lowercase letter, 
-    // it is returned unchanged. 
+    // If the char is not a lowercase letter,
+    // it is returned unchanged.
     public static char toUpper(char ch) {
         // REPLACE WITH YOUR CODE HERE
         return '!';
     }
 
-    // Returns a copy of a String, where all letters 
-    // are now uppercase
-    public static String myToUpperCase(String str) {
-        // REPLACE WITH YOUR CODE HERE
-        return "";
+    // The method is given a String as input and returns a
+    // new String where all of the numbers have been removed
+    // from the original String.
+    public static String removeNumbers(String str) {
+        // REPLACE WITH YOUR CODE
+        return "!!!";
     }
 
-
+    // Write some code to test your methods!
     public static void main(String[] args) {
-        // YOUR CODE HERE
-        
+        // ADD SOME TESTING CODE HERE
     }
 }
