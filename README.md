@@ -15,8 +15,6 @@ You should write some code in main to test that your methods are functioning pro
 
 Add code to [MyMain.java](src/main/java/MyMain.java) to do the desired thing.
 
-Add code to [MyMain.java](src/main/java/MyMain.java) to do the desired thing.
-
 ## Run your code with:
 The easiest way to run your code is to press the play button in [MyMain.java](src/main/java/MyMain.java).
 
